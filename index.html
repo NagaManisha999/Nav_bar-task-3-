@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A modern responsive navigation bar with a mobile menu built using HTML, CSS and JavaScript."
+    >
+
+    <title>Responsive Navigation Bar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Header / Navigation
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <div class="nav-container">
+
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    Dev<span>Space</span>
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <!-- Navigation Menu -->
+                <div class="nav-wrapper" id="navMenu">
+
+                    <ul class="nav-links">
+
+                        <li>
+                            <a
+                                href="#home"
+                                class="nav-link active"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#about"
+                                class="nav-link"
+                            >
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#services"
+                                class="nav-link"
+                            >
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#projects"
+                                class="nav-link"
+                            >
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#contact"
+                                class="nav-link"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <a href="#contact" class="nav-button">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         Main Content
+    ========================== -->
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    HTML • CSS • JavaScript
+                </p>
+
+                <h1>
+                    Responsive Navigation
+                    <span>Made Simple.</span>
+                </h1>
+
+                <p class="hero-description">
+                    A modern responsive navigation bar that provides
+                    a smooth experience across desktop, tablet and
+                    mobile devices.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#about" class="primary-button">
+                        Explore
+                    </a>
+
+                    <a href="#projects" class="secondary-button">
+                        View Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="content-section section" id="about">
+
+            <div class="content-container">
+
+                <p class="section-label">01</p>
+
+                <h2>About</h2>
+
+                <p>
+                    This project demonstrates how a navigation bar
+                    can automatically adapt to different screen
+                    sizes while maintaining a clean and accessible
+                    user experience.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services -->
+        <section class="content-section alternate section" id="services">
+
+            <div class="content-container">
+
+                <p class="section-label">02</p>
+
+                <h2>Services</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Web Design</h3>
+                        <p>
+                            Clean and responsive website interfaces.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Frontend Development</h3>
+                        <p>
+                            Interactive interfaces using modern
+                            frontend technologies.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Websites that work across different
+                            screen sizes.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="content-section section" id="projects">
+
+            <div class="content-container">
+
+                <p class="section-label">03</p>
+
+                <h2>Projects</h2>
+
+                <p>
+                    Explore projects created while practicing
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="content-section alternate section" id="contact">
+
+            <div class="content-container">
+
+                <p class="section-label">04</p>
+
+                <h2>Contact</h2>
+
+                <p>
+                    Have a project idea? Let's build something
+                    together.
+                </p>
+
+                <a
+                    href="mailto:example@gmail.com"
+                    class="primary-button"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 DevSpace. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
